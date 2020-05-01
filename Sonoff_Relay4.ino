@@ -1792,12 +1792,12 @@ document.form.");
 </select>\n\
 <span id=\"time\" class=\"hidden\">at\n\
 <span id=\"hh\" class=\"hidden\">");
-  page += ESPWebBase::tagInput(typeText, FPSTR(paramScheduleHour), "0", F("size=2 maxlength=2"));
+  page += ESPWebBase::tagInput(FPSTR(typeText), FPSTR(paramScheduleHour), "0", F("size=2 maxlength=2"));
   page += F("\n:</span>\n\
 <span id=\"mm\" class=\"hidden\">");
-  page += ESPWebBase::tagInput(typeText, FPSTR(paramScheduleMinute), "0", F("size=2 maxlength=2"));
+  page += ESPWebBase::tagInput(FPSTR(typeText), FPSTR(paramScheduleMinute), "0", F("size=2 maxlength=2"));
   page += F("\n:</span>\n");
-  page += ESPWebBase::tagInput(typeText, FPSTR(paramScheduleSecond), "0", F("size=2 maxlength=2"));
+  page += ESPWebBase::tagInput(FPSTR(typeText), FPSTR(paramScheduleSecond), "0", F("size=2 maxlength=2"));
   page += F("</span><br/>\n\
 <div id=\"weekdays\" class=\"hidden\">\n\
 <input type=\"hidden\" name=\"");
@@ -1844,7 +1844,7 @@ day\n\
   page += F("</select>\n\
 </span>\n\
 <span id=\"year\" class=\"hidden\">");
-  page += ESPWebBase::tagInput(typeText, FPSTR(paramScheduleYear), "2017", F("size=4 maxlength=4"));
+  page += ESPWebBase::tagInput(FPSTR(typeText), FPSTR(paramScheduleYear), "2017", F("size=4 maxlength=4"));
   page += F("</span>\n\
 </div>\n\
 <div id=\"relay\" class=\"hidden\">\n\
